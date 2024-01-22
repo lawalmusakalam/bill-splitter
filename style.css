@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.landing-page, .bill-split-container, .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+
+.container  h2 {
+    text-shadow: 2px 2px rgb(220, 220, 220);
+    color: rgb(58, 58, 58);
+    text-align: center;
+}
+
+.landing-page > button, #calculateBill, #calculateBillAgain {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(58, 58, 58);
+    font-size: 18px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.landing-page > button:hover, #calculateBill:hover, #calculateBillAgain:hover {
+    font-size: 19px;
+    background-image: linear-gradient(120deg, #8bb7fe 0%, #8dd6f8 100%);
+}
+
+.bill, .people, .tip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+}
+
+.bill-split-container input {
+    width: 70px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+}
+
+.people-buttons > button {
+    font-size: 20px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+}
+
+.result {
+    padding: 20px;
+    text-align: center;
+}
+
+.total-bill, .split-total-bill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+}
